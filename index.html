@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" theme-data="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,23 +24,74 @@
       rel="stylesheet"
     />
     <!-- tailwind config  -->
-     <script>
-        tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              bgBody:"#f9f9f9"
+            },
+          },
+          fontFamily: {
+            manrope: ["Manrope", "sans-serif"],
+          },
         },
-        fontFamily:{
-            manrope:["Manrope", "sans-serif"],
-        },
-      }
-    }
-     </script>
-
+      };
+    </script>
   </head>
   <body class="font-manrope">
-    
+    <!-- header section -->
+    <header class="bg-bgBody">
+      <nav class="w-full md:w-[90%] mx-auto">
+        <div class="navbar">
+          <div class="navbar-start space-x-[6px]">
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] p-1 rounded-full"></i>
+            <h3 class="text-xl md:text-2xl font-bold text-[#1C1C1C]">Rin<span class="text-[#ABEF5F]">te</span>rio</h3>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-[#494949] text-sm font-semibold hover:bg-gray-300 transition-all ease-in-out">Home</a></li>
+              <li><a class="text-[#737373] text-sm font-md hover:bg-gray-300 transition-all ease-in-out">Services</a></li>
+              <li><a class="text-[#737373] text-sm font-md hover:bg-gray-300 transition-all ease-in-out">Portfolio</a></li>
+              <li><a class="text-[#737373] text-sm font-md hover:bg-gray-300 transition-all ease-in-out">Blogs</a></li>
+              <li><a class="text-[#737373] text-sm font-md hover:bg-gray-300 transition-all ease-in-out">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-end">
+            <div class="flex items-center justify-center space-x-4">
+              <i class="fa-solid fa-magnifying-glass hidden md:flex bg-white p-[6px] rounded-full border"></i>
+            <i class="fa-solid fa-cart-shopping hidden md:flex  bg-white p-[6px] rounded-full border"></i>
+            <button class="badge bg-[#ABEF5F] px-2 p-4 space-x-2 hidden md:flex">
+              <h1 class="font-extrabold md:font-bold text-xs md:text-sm">Book Consult</h1>
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-[2px] md:p-1 rounded-full"></i>
+            </button>
+          </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <i class="fa-solid fa-bars fa-1x bg-white p-[7px] rounded-full border"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-1 w-52 p-2 shadow right-0 gap-2"
+              >
+              <li><a class="text-[#494949] text-sm font-semibold hover:bg-gray-300 transition-all ease-in-out">Home</a></li>
+              <li><a class="text-[#737373] text-sm font-md hover:bg-gray-300 transition-all ease-in-out">Services</a></li>
+              <li><a class="text-[#737373] text-sm font-md hover:bg-gray-300 transition-all ease-in-out">Portfolio</a></li>
+              <li><a class="text-[#737373] text-sm font-md hover:bg-gray-300 transition-all ease-in-out">Blogs</a></li>
+              <li><a class="text-[#737373] text-sm font-md hover:bg-gray-300 transition-all ease-in-out">Contact Us</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main></main>
+    <!-- footer section -->
+    <footer></footer>
   </body>
 </html>
