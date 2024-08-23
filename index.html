@@ -41,6 +41,15 @@
           },
           backgroundImage:{
             input:"url('./assets/bg.jpg')",
+          },
+          backgroundRepeat:{
+            repeat:"no-repeat",
+          },
+          backgroundSize:{
+            size:"cover",
+          },
+          backgroundPosition:{
+            position:"center",
           }
         },
       };
@@ -120,6 +129,7 @@
 
     <!-- main section -->
     <main class="w-full">
+
       <!-- about us part -->
        <section class="relative bg-[#f4f4f4] py-2 lg:py-12">
         <div class="absolute left-10 hidden lg:block">
@@ -139,7 +149,7 @@
 
               <!-- about-us content -->
               <div class="flex-1 space-y-4 mt-2 lg:mt-10">
-                <button class="flex items-center gap-1 badge bg-white p-3 mx-auto lg:ml-0">
+                <button class="flex items-center gap-1 badge bg-[#ABEF5F] p-3 mx-auto lg:ml-0">
                   <i class="fa-solid fa-arrow-right"></i>
                   <p class="font-bold">About Us</p>
                 </button>
@@ -208,7 +218,7 @@
 
             <!-- work-process content -->
             <div class="w-full md:w-3/5 text-center mx-auto space-y-3">
-              <button class="flex justify-center items-center gap-1 badge bg-white p-3 mx-auto">
+              <button class="flex justify-center items-center gap-1 badge bg-[#ABEF5F] p-3 mx-auto">
                 <i class="fa-solid fa-arrow-right"></i>
                 <p class="font-bold">How We Works</p>
               </button>
@@ -460,7 +470,7 @@
 
         <!-- input-box section -->
 
-        <section class="py-4 lg:py-16 bg-input">
+        <section class="py-4 lg:py-16 bg-input bg-size bg-position bg-repeat">
           <div class="w-[90%] mx-auto space-y-5">
 
             <!-- input content -->
@@ -473,14 +483,61 @@
               <p class="text-gray-500 font-semibold">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
 
+            <!-- input-boxes -->
 
+            <div class="w-[95%] lg:w-[80%] mx-auto flex flex-col space-y-4">
+              <div class="flex flex-col lg:flex-row gap-4">
+                <input type="text" placeholder="First Name*" class="input input-bordered w-full rounded-3xl" />
+                <input type="text" placeholder="Last Name*" class="input input-bordered w-full rounded-3xl" />
+              </div>
+              <div class="flex flex-col lg:flex-row gap-4">
+                <input type="text" placeholder="Phone Number*" class="input input-bordered w-full rounded-3xl" />
+                <input type="text" placeholder="Email Number*" class="input input-bordered w-full rounded-3xl" />
+              </div>
+              <div>
+                <textarea placeholder="Write your message here" class="textarea textarea-bordered textarea-lg h-[8rem] w-full resize-none rounded-3xl"></textarea>
+              </div>
+              <button class="badge bg-[#ABEF5F] py-5 space-x-2 w-full hover:bg-black hover:text-white transition-all ease-in-out">
+                <h1 class="font-extrabold md:font-bold text-sm md:text-lg">Send Mail</h1>
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-[2px] md:p-1 rounded-full"></i>
+            </button>
 
+            </div>
           </div>
         </section>
 
-
-    </main>
+      </main>
     <!-- footer section -->
-    <footer></footer>
+    <footer class="py-4 lg:py-16 bg-[#1C1C1C]">
+
+     <div class="w-[90%] lg:w-1/2 mx-auto flex flex-col items-center justify-center space-y-2 lg:space-y-4">
+      <div class="flex items-center text-center space-x-[6px]">
+        <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] p-1 rounded-full hover:bg-black hover:text-white hover:border transition-all ease-in-out"></i>
+            <h3 class="text-xl md:text-2xl font-bold text-white">Rin<span class="text-[#ABEF5F]">te</span>rio</h3>
+      </div>
+
+      <div>
+        <p class="text-[#737373] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      </div>
+
+      <div>
+          <ul class="px-[8px] py-[1rem] list-none grid grid-cols-1 lg:grid-cols-5 justify-center items-center text-center space-y-3 lg:space-y-[2px]">
+            <li><a class="text-[#e9e9e994] font-semibold hover:bg-gray-300 hover:text-black transition-all ease-in-out px-2 rounded-md">Home</a></li>
+            <li><a class="text-[#e9e9e9a3] font-semibold hover:bg-gray-300 hover:text-black transition-all ease-in-out px-2 rounded-md">Services</a></li>
+            <li><a class="text-[#e9e9e99b] font-semibold hover:bg-gray-300 hover:text-black transition-all ease-in-out px-2 rounded-md">Portfolio</a></li>
+            <li><a class="text-[#e9e9e99a] font-semibold hover:bg-gray-300 hover:text-black transition-all ease-in-out px-2 rounded-md">Blogs</a></li>
+            <li><a class="text-[#e9e9e9a3] font-semibold hover:bg-gray-300 hover:text-black transition-all ease-in-out px-2 rounded-md">Contact Us</a></li>
+          </ul>
+      </div>
+
+      <div class="w-full lg:w-1/4">
+        <button class="badge bg-[#ABEF5F] px-2 p-4 space-x-2 md:flex hover:bg-black hover:text-white transition-all ease-in-out w-full">
+          <h1 class="font-extrabold md:font-bold text-xs md:text-sm">Book Consult</h1>
+          <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-[2px] md:p-1 rounded-full"></i>
+      </button>
+      </div>
+     </div>
+
+    </footer>
   </body>
 </html>
